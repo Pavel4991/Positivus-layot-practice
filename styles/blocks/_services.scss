@@ -1,5 +1,9 @@
 .services {
     &__list {
         margin-bottom: 100px;
+
+        @include mobile {
+            margin-bottom: 70px;
+        }
     }
 }

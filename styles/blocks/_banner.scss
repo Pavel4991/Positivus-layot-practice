@@ -3,6 +3,10 @@
 
     padding-block: var(--bannerImageOffsetY);
 
+    @include tablet {
+        --bannerImageOffsetY: 0;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -17,6 +21,14 @@
         align-items: start;
         row-gap: 26px;
         padding: 60px;
+
+        @include tablet {
+            padding: 50px;
+        }
+
+        @include mobile {
+            row-gap: 20px;
+        }
     }
 
     &__description {
@@ -25,5 +37,10 @@
 
     &__image {
         margin-block: calc(var(--bannerImageOffsetY) * -1);
+
+        @include tablet {
+            max-width: 40%;
+            height: auto;
+        }
     }
 }
