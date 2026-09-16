@@ -201,6 +201,7 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+
 @font-face {
   font-family: "Space Grotesk";
   src: "../fonts/SpaceGrotesk-Regular.woff2" format("woff2");
